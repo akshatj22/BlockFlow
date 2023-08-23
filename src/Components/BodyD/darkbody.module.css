@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300;400;600;700&family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 740px;
+  gap: 2.25rem;
+  padding-left: 5rem;
+  padding-right: 10rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  height: 300px;
+  width: 600px;
+  margin-bottom: 280px;
+}
+
+
+
+h1 {
+  color: aliceblue;
+  font-family: "Neue Montreal", sans-serif;
+  font-size: 50px;
+  width: 768px;
+  display: flex;
+  height: 184px;
+  left: 88px;
+  line-height: normal;
+  margin-bottom: 0;
+
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: 5%;
+  gap: 44px;
+}
+
+h3 {
+  top: 0;
+  color: aliceblue;
+  width: 250px;
+  /* font-size: 25px; */
+  /* line-height: 23.4; */
+  gap: 44px;
+  margin-bottom: 8px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 35px 29px #070b17;
+  -moz-box-shadow: 0px 35px 29px #070b17;
+  box-shadow: 0px 35px 29px #070b17;
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+  font-size: 17px;
+  height: 64px;
+  background: #8075ff;
+  padding: 20px 35px 20px 35px;
+  text-decoration: none;
+  margin-top: 17px;
+  width: 225px;
+  line-height: 17px;
+  font-weight: 600;
+  border-width: 0;
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px #0000002F,
+    0px 26.200000762939453px 19.09000015258789px 0px #00000048,
+    0px 49.33000183105469px 35.939998626708984px 0px #0000005E,
+    0px 88.01000213623047px 64.11000061035156px 0px #00000077,
+    0px 164.60000610351562px 119.9000015258789px 0px #0000009B,
+    0px 394px 250px 0px #000000F2;
+}
+
+.darkButton {
+  background: #8075ff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.lightButton {
+  background: #a9c2e8;
+  color: #333333;
+  -webkit-box-shadow: 0px 35px 29px #83a4b3;
+  -moz-box-shadow: 0px 35px 29px #83a4b3;
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px #6E8B972F,
+    0px 26.200000762939453px 19.09000015258789px 0px #6E8B9748,
+    0px 49.33000183105469px 35.939998626708984px 0px #6E8B975E,
+    0px 88.01000213623047px 64.11000061035156px 0px #6E8B9777,
+    0px 164.60000610351562px 119.9000015258789px 0px #6E8B979B,
+    0px 394px 250px 0px #6E8B97F2;
+}
+
+.image {
+  top: 0;
+  padding-bottom: 450px;
+  height: 100px;
+}
+
+.darkh1 {
+  color: #ffffff;
+}
+
+.darkh3 {
+  color: #ffffff;
+}
+
+.lighth1 {
+  color: #444444;
+}
+
+.lighth3 {
+  color: #444444;
+}
+
+/* Media query for screens at 1245px */
+@media (max-width: 1245px) {
+  h1 {
+    font-size: calc(50px + (70 - 50) * ((100vw - 768px) / (1245 - 768)));
+    /* Decrease font size linearly */
+  }
+
+  h3 {
+    font-size: calc(18px + (18 - 14) * ((100vw - 768px) / (1245 - 768)));
+    /* Decrease font size linearly */
+  }
+
+  .image {
+    height: calc(80px + (100 - 80) * ((100vw - 768px) / (1245 - 768)));
+    /* Decrease image size linearly */
+  }
+
+  .btn {
+    height: calc(50px + (67 - 50) * ((100vw - 768px) / (1245 - 768)));
+    /* Decrease button height linearly */
+    font-size: calc(14px + (17 - 14) * ((100vw - 768px) / (1245 - 768)));
+    /* Decrease font size linearly */
+    width: calc(150px + (200 - 150) * ((100vw - 768px) / (1245 - 768)));
+    /* Adjust button width linearly */
+  }
+}

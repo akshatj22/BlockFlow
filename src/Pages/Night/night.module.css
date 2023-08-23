@@ -1,0 +1,131 @@
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.dark-container {
+    background: hsla(227, 41%, 21%, 1);
+    background: linear-gradient(90deg, hsla(227, 41%, 21%, 1) 100%, hsla(225, 53%, 6%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(227, 41%, 21%, 1) 100%, hsla(225, 53%, 6%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(227, 41%, 21%, 1) 100%, hsla(225, 53%, 6%, 1) 100%);
+    background: #000D26;
+    background-size: contain;
+
+}
+
+/*url(./assets/dark-mode-circle.svg) no-repeat center top*/
+
+.light-container {
+    background: #e8f0fd;
+    background: -webkit-linear-gradient(left, #e8f0fd, #ffffff);
+    background: -moz-linear-gradient(left, #e8f0fd, #ffffff);
+    background: -ms-linear-gradient(left, #e8f0fd, #ffffff);
+    background: -o-linear-gradient(left, #e8f0fd, #ffffff);
+    background: linear-gradient(to right, #e8f0fd, #ffffff);
+    background: url(./assets/light-mode-circle.svg) no-repeat center bottom;
+    background-size: contain;
+}
+
+.invisibleCircleLightToDark {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(34, 51, 109, 0.30);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: -110%;
+    animation: moveCircleUp 1.4s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.invisibleCircleDarkToLight {
+    width: 1000px;
+    height: 1000px;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: -110%;
+    animation: moveCircleDown 1.4s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveCircleDown {
+    0% {
+        transform: translateY(-80px);
+        background: linear-gradient(rgba(255, 215, 0, 1),rgba(255, 255, 255, 0));
+        scale: 1.2;
+        opacity: 1;
+        left: 18%;
+        width: 1000px;
+    }
+    25%{
+        opacity: 1;
+    }
+    50% {
+        width: 1000px;
+        left:18%;
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1250px);
+        width: 1000px;
+        left: 18%;
+        background: linear-gradient(rgba(255, 215, 0, 1),rgba(255, 255, 255, 0));
+        opacity: 0;
+        scale: 1.2;
+    }
+}
+
+@keyframes moveCircleUp {
+    0% {
+        transform: translateY(1250px);
+        width: 1000px;
+        left: 18%;
+        background-color: #1F284A;
+        scale: 1.2;
+        opacity: 0.3;
+    }
+
+    25% {
+        width: 1000px;
+        background-color: #1F284A;
+        left:18%;
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    50% {
+        width: 1000px;
+        left:18%;
+        background-color: #1F284A;
+
+        opacity: 1;
+    }
+
+    75% {
+        width: 1000px;
+        left:18%;
+        background-color: #1F284A;
+        opacity: 1;
+        z-index: 1000;
+    }
+    100% {
+        transform: translateY(-80px);
+        width: 1000px;
+        left: 18%;
+        background-color: #1F284A;
+        scale: 1.2;
+        opacity: 1;
+    }
+}
