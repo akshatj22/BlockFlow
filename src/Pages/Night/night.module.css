@@ -27,7 +27,7 @@
     background: -ms-linear-gradient(left, #e8f0fd, #ffffff);
     background: -o-linear-gradient(left, #e8f0fd, #ffffff);
     background: linear-gradient(to right, #e8f0fd, #ffffff);
-    background: url(./assets/light-mode-circle.svg) no-repeat center bottom;
+    /* background: url(./assets/light-mode-circle.svg) no-repeat center bottom; */
     background-size: contain;
 }
 
@@ -82,7 +82,7 @@
         opacity: 1;
     }
     100% {
-        transform: translateY(1200px);
+        transform: translateY(1150px);
         width: 1000px;
         left: 18%;
         background: rgb(255,255,255);
