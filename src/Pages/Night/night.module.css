@@ -60,7 +60,8 @@
 @keyframes moveCircleDown {
     0% {
         transform: translateY(-80px);
-        background: linear-gradient(rgba(255, 215, 0, 1),rgba(255, 255, 255, 0));
+        background: rgb(255,255,255);
+        background: linear-gradient(60deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 100%);
         scale: 1.2;
         opacity: 1;
         left: 18%;
