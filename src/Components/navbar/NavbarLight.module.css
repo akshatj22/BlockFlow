@@ -51,6 +51,7 @@ a {
 @media (max-width: 1245px) and (min-width: 768px) {
   .navbar {
     gap: 3rem; 
+    width: auto;
   }
 
   .navbarleft {

@@ -172,7 +172,7 @@ h3 {
 h1 {
   color: aliceblue;
   font-family: "Neue Montreal", sans-serif;
-  font-size: 50px;
+  font-size: 4rem;
   width: 768px;
   display: flex;
   height: 184px;
@@ -263,7 +263,7 @@ h3 {
 }
 
 /* Media query for screens at 1245px */
-@media (max-width: 1245px) {
+/* @media Laptop and (max-width: 1245px) {
   h1 {
     font-size: calc(50px + (70 - 50) * ((100vw - 768px) / (1245 - 768)));
   }
@@ -281,10 +281,36 @@ h3 {
     font-size: calc(14px + (17 - 14) * ((100vw - 768px) / (1245 - 768)));
     width: calc(150px + (200 - 150) * ((100vw - 768px) / (1245 - 768)));
   }
-}
+} */
 
 /* Media query for screens at 768px */
-@media (max-width: 768px) {
+
+@media (max-width: 1245px) and (min-width: 769px) {
+  /* .container {
+    
+  } */
+
+  h1 {
+    font-size: calc(50px + (70 - 50) * ((100vw - 768px) / (1245 - 768)));
+  }
+
+  h3 {
+    font-size: calc(18px + (18 - 14) * ((100vw - 768px) / (1245 - 768)));
+  }
+
+  .image {
+    /* height: calc(80px + (100 - 80) * ((100vw - 768px) / (1245 - 768))); */
+    height: auto;
+  }
+
+  .btn {
+    height: calc(50px + (67 - 50) * ((100vw - 768px) / (1245 - 768)));
+    font-size: calc(14px + (17 - 14) * ((100vw - 768px) / (1245 - 768)));
+    width: calc(150px + (200 - 150) * ((100vw - 768px) / (1245 - 768)));
+  }
+}
+
+@media Mobile and (max-width: 768px) {
   .container {
     flex-direction: column;
     height: auto;
@@ -292,12 +318,12 @@ h3 {
     max-width: 100%;
     min-height: 100vh;
   }
-
+/* 
   .text {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-  }
+  } */
 
   h1 {
     font-size: 2.5rem;
